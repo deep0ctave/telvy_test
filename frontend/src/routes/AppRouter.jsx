@@ -15,21 +15,21 @@ import Settings from '../components/pages/Settings';
 import NotFound from '../components/pages/NotFound';
 
 // Student
-import Quizzes from '../components/pages/Student/Quizzes';
-import QuizStart from '../components/pages/Attempts/QuizStart';
-import LiveAttempt from '../components/pages/Attempts/LiveAttempt';
-import AttemptResult from '../components/pages/Attempts/AttemptResult';
-import AttemptHistory from '../components/pages/Attempts/AttemptHistory';
-import Stats from '../components/pages/Student/Stats';
-import Leaderboard from '../components/pages/Student/Leaderboard';
+import Quizzes from '../components/pages/student/Quizzes';
+import QuizStart from '../components/pages/attempts/QuizStart';
+import LiveAttempt from '../components/pages/attempts/LiveAttempt';
+import AttemptResult from '../components/pages/attempts/AttemptResult';
+import AttemptHistory from '../components/pages/attempts/AttemptHistory';
+import Stats from '../components/pages/student/Stats';
+import Leaderboard from '../components/pages/student/Leaderboard';
 
 // Teacher
 //import QuizList from '../components/pages/Teacher/QuizList';
 
 // Admin
-import UserList from '../components/pages/Admin/UserList';
-import QuestionList from '../components/pages/Admin/QuestionList';
-import QuizList from '../components/pages/Admin/QuizList';
+import UserList from '../components/pages/admin/UserList';
+import QuestionList from '../components/pages/admin/QuestionList';
+import QuizList from '../components/pages/admin/QuizList';
 
 import PrivateRoute from './PrivateRoute';
 
