@@ -21,10 +21,18 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 // Middleware
+// ✅ CORS — must be early
 app.use(cors({
-  origin: ['http://localhost:5173','https://telvy-test.vercel.app','https://telvy-test-2v0err1bd-deep0ctaves-projects.vercel.app'], // or your frontend domain
-  credentials: true               // ✅ allow cookies (credentials)
+  origin: [
+    'http://localhost:5173',
+    'https://telvy-test.vercel.app',
+    'https://telvy-test-2v0err1bd-deep0ctaves-projects.vercel.app'
+  ],
+  credentials: true,
 }));
+
+// ✅ Allow preflight OPTIONS requests
+app.options('*', cors());
 
 const cookieParser = require('cookie-parser');
 app.use(cookieParser());
